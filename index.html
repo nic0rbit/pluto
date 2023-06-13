@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabisque Papelaria</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="aboutUs.html">Sobre Nós</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="joinUs.html">Trabalhe Conosco</a></li>
+                <li><a href="team.html">Equipe</a></li>
+                <li><a href="loc.html">Localização</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Volte às aulas com<br>o <span>Rabisque</span></h2>
+                <p>Por aqui, fabricamos materiais da mais alta qualidade e variedade.<br>É quase impossível não achar o que está procurando<br>na papelaria mais especializada da internet!</p>
+                <a href="aboutUs.html">Saiba Mais</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/img1.png" class="supplies">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/img1.png" onclick="imgSlider('images/img1.png');changeCircleColor('#FE4773')" width="120"></li>
+            <li><img src="images/img2.png" onclick="imgSlider('images/img2.png');changeCircleColor('#2E6D92')" width="120"></li>
+            <li><img src="images/img3.png" onclick="imgSlider('images/img3.png');changeCircleColor('#F6D68D')" width="90"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png" width="40px"></a></li>
+            <li><a href="#"><img src="images/ig.png" width="40px"></a></li>
+            <li><a href="#"><img src="images/twt.png" width="40px"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.supplies').src = anything
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
